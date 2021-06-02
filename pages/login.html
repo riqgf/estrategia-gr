@@ -3,31 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../css/style.css">
-    <title>Estrategia GR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Estrategia GR</title>
 </head>
 <body class="bg-secondary">
-    <header class="bg-primary">
+ <header class="sticky-top">
+    <div class="bg-primary d-flex flex-wrap justify-content-between align-items-center w-100">
         <a href="/">
           <img class="logo" src="../images/logo-branca.png" alt="logo">
         </a>
 
-        <nav>
-          <a href="../index.html" class="btn-primary">
-            Página Inicial
-          </a>
-          <a href="contato.html" class="btn-primary">
-            Contato
-          </a>
-          <a href="login.html" class="btn-primary">
-            Login
-          </a>
-          <a href="cadastro.html" class="btn-secondary">
-            Cadastre-se
-          </a>
-        </nav>
-    </header>
-    <div class="d-flex  login justify-content-center align-items-center">
+        <input class="d-none" type="checkbox" name="" id="nav">
+        
+        <label for="nav" class="d-block d-md-none" id="navBtn">
+          <i class="fa fa-bars text-white fa-3x"></i>
+        </label>
+
+        <label for="nav" id="labelMenu">
+          <nav class="d-none d-md-block">
+            <a href="/index.html" class="btn-primary">
+              Página Inicial
+            </a>
+            <a href="contato.html" class="btn-primary">
+              Contato
+            </a>
+            <a href="login.html" class="btn-primary">
+              Login
+            </a>
+            <a href="cadastro.html" class="btn-secondary">
+              Cadastre-se
+            </a>
+          </nav>
+        </label>
+        <label class="d-none" for="nav" id="backdrop"></label>
+    </div>
+  </header>
+    <main class="d-flex  login justify-content-center align-items-center">
       <section class=" d-flex flex-column justify-content-center   bg-tertiary login">
         
         <h2 class="fs-2">FAZER LOGIN</h2>
@@ -38,7 +50,7 @@
         <br>
         <a class="fs-3 botao text-center u-none" href="aula.html">Login</a>
       </section>
-    </div>
+    </main>
   
   </body>
 </html>

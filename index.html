@@ -8,78 +8,90 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header class="sticky-top">
+      <div class="bg-primary d-flex flex-wrap justify-content-between align-items-center w-100">
+          <a href="/">
+            <img class="logo" src="images/logo-branca.png" alt="logo">
+          </a>
 
-    <!-- Elton - Barra de Navegação do Topo -->
-    <header class="bg-primary">
-      <a href="/">
-        <img class="logo" src="./images/logo-branca.png" alt="logo">
-      </a>
+          <input class="d-none" type="checkbox" name="" id="nav">
+          
+          <label for="nav" class="d-block d-md-none" id="navBtn">
+            <i class="fa fa-bars text-white fa-3x"></i>
+          </label>
 
-      <nav>
-        <a href="/" class="btn-primary">Página Inicial</a>
-        <a href="pages/contato.html" class="btn-primary">Contato</a>
-        <a href="pages/login.html" class="btn-primary">Login</a>
-        <a href="pages/cadastro.html" class="btn-secondary text-primary">Cadastre-se</a>
-      </nav>
+          <label for="nav" id="labelMenu">
+            <nav class="d-none d-md-block">
+              <a href="/index.html" class="btn-primary">
+                Página Inicial
+              </a>
+              <a href="pages/contato.html" class="btn-primary">
+                Contato
+              </a>
+              <a href="pages/login.html" class="btn-primary">
+                Login
+              </a>
+              <a href="pages/cadastro.html" class="btn-secondary">
+                Cadastre-se
+              </a>
+            </nav>
+          </label>
+          <label class="d-none" for="nav" id="backdrop"></label>
+      </div>
+        
+  </header>
 
-    </header>
 
-    <!-- Andrea - Anuncio -->
-    <section class="d-flex flex-wrap align-items-center justify-content-between bg-primary" id="hero">
+    <main>
+    <section class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between bg-primary" id="hero">
       <div class="w-100 w-md-33">
         <img class="img-fluid" src="images/rodrigo1.png" alt="rodrigo">
 
       </div>
 
-      <ul class="text-white fs-3 fw-bold w-100 w-md-33 mx-auto d-block">
+      <ul class="text-white fs-3 fw-bold mx-auto w-75 w-md-33 mx-auto d-block py-2 px-2">
         <li>APOIO INDIVIDUAL</li>
         <li>AULAS ONLINE/GRAVADAS</li>
         <li>PROPOSTAS SEMANAIS</li>
       </ul>
 
-      <div class="info-hero w-100 w-md-33">
-
-        <img class="mx-auto d-block" src="images/info-hero.png" alt="informações">
-
-
-
+      <div class="info-hero w-75 w-md-33 p-2">
+        <img class="mx-auto d-block img-fluid" src="images/info-hero.png" alt="informações">
       </div>
-
-
     </section>
-
-    <!-- Henrique - Icones -->
-    <main>
+    
 
       <section id="vantagens" class="text-primary">
-        <div class="container d-flex justify-content-around align-items-center">
+        <div class="container d-flex  align-items-center py-2">
+          <div class="d-flex align-items-md-start align-items-center flex-column flex-md-row justify-content-around w-100">
 
-          <div class="d-block">
-            <i class="fa fa-book fa-4x"></i>
-            <p>MATERIAIS COMPLETOS E ATUALIZADOS!</p>
-          </div>
+            <div class="d-block w-md-15 w-50 py-1">
+              <i class="fa fa-book fa-4x"></i>
+              <p>MATERIAIS COMPLETOS E ATUALIZADOS!</p>
+            </div>
 
-          <div class="d-block">
-            <i class="fa fa-home fa-4x"></i>
-            <p>ASSISTA AS AULAS NO CONFORTO DA SUA CASA</p>
-          </div>
+            <div class="d-block w-md-15 w-50 py-1">
+              <i class="fa fa-home fa-4x"></i>
+              <p>ASSISTA AS AULAS NO CONFORTO DA SUA CASA</p>
+            </div>
 
-          <div class="d-block">
-            <i class="fa fa-graduation-cap fa-4x"></i>
-            <p>CONSIGA A APROVAÇÃO QUE VOCÊ TANTO PROCURA COM O ESTRATEGIA GR</p>
+            <div class="d-block w-md-15 w-50 py-1">
+              <i class="fa fa-graduation-cap fa-4x"></i>
+              <p>CONSIGA A APROVAÇÃO QUE VOCÊ TANTO PROCURA COM O ESTRATEGIA GR</p>
+            </div>
+
           </div>
         </div>
-
       </section>
 
 
       <section id="formacao" class="bg-secondary">
-        <div class="container d-flex">
-          <div class="d-flex justify-content-center w-md-50">
+        <div class="container d-flex flex-wrap-reverse">
+          <div class="d-flex justify-content-center w-md-50 w-100 py-2">
             <img src="images/video-home.png" alt="" id="video-home">
 
           </div>
-          <div class="w-md-66 text-primary w-md-50">
+          <div class="w-100 text-primary w-md-50">
             <h2 class="text-center">Conheça o professor</h2>
             <div class="bg-tertiary rounded fw-bold">
               <ul>
@@ -103,8 +115,17 @@
     </main>
 
     <footer class="bg-primary">
-      <img src="images/logo-branca.png" alt="" srcset="" class="w-50">
-     <small>Todos os direitos reservados &copy</small>
+      <!-- <img src="images/logo-branca.png" alt="" srcset="" class="w-50">-->
+     
+    <div class="foguete-container d-flex flex-column">
+      <img class="foguete" src="images/foguete.png" alt="" srcset="">
+
+      <i class="fa fa-cloud fumaca" aria-hidden="true"></i>
+      <i class="fa fa-cloud fumaca" aria-hidden="true"></i>
+
+    </div>
+
+    <small>Todos os direitos reservados &copy</small> 
 
     </footer>
 
